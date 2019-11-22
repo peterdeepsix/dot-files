@@ -2,6 +2,11 @@
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 
+#Yarn install
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update -y && sudo apt install yarn -y
+
 # Add the Cloud SDK distribution URI as a package source
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 
