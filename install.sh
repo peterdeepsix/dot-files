@@ -10,3 +10,7 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyr
 
 # Update the package list and install the Cloud SDK
 sudo apt-get update -y && sudo apt-get install google-cloud-sdk -y
+
+#setup git
+git config --global user.email "peter@deepsixdesign.com"
+git config --global user.name "Peter Arnold"
