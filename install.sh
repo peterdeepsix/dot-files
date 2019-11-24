@@ -19,6 +19,3 @@ sudo apt-get update -y && sudo apt-get install google-cloud-sdk -y
 # setup git
 git config --global user.email "peter@deepsixdesign.com"
 git config --global user.name "Peter Arnold"
-
-# added kill for node use "fkill -f :3100"
-npm i -g fkill
